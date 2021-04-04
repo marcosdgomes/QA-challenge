@@ -1,0 +1,158 @@
+Tipos de testes
+
+Podcast referência:https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy80MjZmNTMwMC9wb2RjYXN0L3Jzcw/episode/NWZmODE3Y2EtMTIxNi00YjI4LWJmZjUtZDhjYWEzNDY5NTdl
+
+>>Testes de usabilidade 
+Critérios básicos: Intuitividade, eficiência, memorização, erro (quantidade de erro deve ser a menor possivel)
+Problemas comuns no teste de usabilidade: Irrelevância; Inadequação; Resposta inesperada; Cliques.
+
+Checklist com perguntas básicas a respeito do teste:
+
+Ferramentas
+
+Vantagens
+
+>>Testes de confiabilidade
+
+>>Testes de portabilidade
+
+>>Testes de acessibilidade
+
+>>Testes de software
+
+>>
+
+A criação dos cenários em BDD é feita através da “quebra” de um requisito dentro do contexto
+e necessidade para gerar cenários de teste que darão o resultado esperado. Usa-se uma identação logica com as palavras:
+>> Dado que, Quando, Então e deve
+
+Abaixo, um mapa de identação de uso do BDD com a sintaxe de Gherkin
+
+Estrutura Básica de Sintaxe para o Gherkin para o BDD
+Dado (O Contexto)
+Quando (O Evento)
+Então (A Saída)
+
+Palavras-chaves auxiliares
+Mas
+E
+# (Comentários durante a escrita do roteiro)
+
+Cenários exemplos
+Ex: Controle de estoque de carros de aluguel
+
+#Cenário para Teste de retirada do carro do pátio
+Cenário A: Carros no pátio podem ser alugados
+Dado que um cliente aluga um carro
+E eu tenho cinco carros no pátio disponíveis
+Quando ele aluga o carro
+Então eu devo ter quatro carros disponíveis no pátio
+
+#Cenário para a devolução e carro alugado
+Cenário B: Carros alugados devem voltar ao pátio
+Dado que um carro está alugado e eu tenho cinco carros
+E o cliente deve devolver o Carro alugado
+Quando ele devolve o carro
+Então eu devo ter cinco carros disponíveis no pátio
+
+Behavior-Driven Development(BDD) = METODOLOGIA
+
+O que o BDD propõe, é que assim que o analista de negócio entende o que precisa ser implementado, que ele se reúna com o desenvolvedor e o QA 
+para discutirem sobre a funcionalidade proposta. Durante essa conversa, os participantes levantam questionamentos a respeito da história através de exemplos 
+concretos de uso, e através desses exemplos o time decide se a história está ou não pronta para desenvolvimento.
+
+O BDD funciona de maneira mais ampla, de forma que este encapsula o TDD. Enquanto o TDD está focado na fase de desenvolvimento, o BDD é aplicado de ponta a ponta no processo de construção do software, abrangendo todas as fases.
+
+Uma técnica que pode ser utilizada durante a reunião é o mapeamento de exemplos. Essa prática inicia com a definição da história, em seguida os participantes cooperam para identificar as regras e levantam seus exemplos de forma que a regra de negócio seja colocada em prática.
+
+As dúvidas também fazem parte do jogo, então para cada pergunta não respondida durante a reunião, um card é criado para o registro.
+
+Gherkin é a maneira que serão escritos os cenários em BDD, mas não significa que seja todo o BDD em si.
+
+ssa é a grande vantagem: com o Gherkin criamos uma documentação que será usada e compreendida por todos, tanto pessoas quanto máquinas, 
+e quando integrado com algum framework (como o Cucumber, por exemplo), podemos aplicar a automatização.
+
+Cucumber framework de testes que usa Gherkin
+Muitas empresas estão elencando o Cucumber como requisito para as vagas de QA. Pesquisando no Linkedin, 
+podemos encontrar mais de 3.000 mil oportunidades pelo mundo. Fica claro que é um framework consolidado e, por isso, 
+queremos compartilhar nossas experiências para te ajudar a estar sempre atualizado com o mercado!
+
+
+Exemplo:
+Sendo assim, se trata de literalmente de uma descrição da regra de negócio do sistema, em forma passo-a-passo, simples assim. Por exemplo, para fazer um login na aplicação XPTO, teríamos os passos definidos na mão, mais ou menos, da seguinte forma:
+
+Pré condição: Possuir uma conta no sistema
+Acessar a página de login
+Preencher credenciais
+Clicar no botão de login
+Esperar o login ser completado
+
+1 As an Admin User,
+2 I would like to change the password of other user's accounts.
+3            
+4 Feature: Update password
+5   Scenario: Admin user can update the user password
+6     Given I am in the HR system with an Admin account
+7     When I update password of another user
+8     Then I receive a message for updating password successfully
+9     And user's password is updated to the new password
+
+1 Como usuário administrador,
+2 Desejo alterar a senha das contas de outros usuários.
+3
+4 Recurso: Atualizar senha
+5 Cenário: o usuário administrador pode atualizar a senha do usuário
+6 Dado que estou no sistema de RH com uma conta de administrador
+7 Quando eu atualizo a senha de outro usuário
+8 Então eu recebo uma mensagem para atualizar a senha com sucesso
+9 E a senha do usuário é atualizada para a nova senha
+
+A estrutura é composta pelas seguintes palavras chave e caracteres especiais padrões:
+
+O Gherkin está disponível em vários idiomas, permitindo você escrever usando as palavras chave de um idioma específico. 
+Qualquer linguagem diferente do inglês (en) precisa ser explicitada com um comentário #language: <idioma> no 
+início de seu arquivo *.feature.
+
+Feature
+Scenario
+Background
+Given, When, Then, And, But
+Scenario Outline
+Examples
+“”” (Doc Strings)
+| (Data Tables)
+@ (Tags)
+# (Comments)
+< > (parâmetros)
+“ “ (valores)
+
+
+Exemplo de estrutura
+
+Feature: <Texto conciso descrevendo o que é desejado>
+As a <ator explícito do negócio>
+I want to <obter algum resultado benéfico para o objetivo>
+In order to <realizar algo de valor para o negócio>
+
+Scenario <Alguma situação do negócio>
+Given <uma pré condição>
+And <outra pré condição>
+When <uma ação realizada pelo ator>
+And <outra ação>
+Then <um resultado testável é alcançado>
+And <outro resultado>
+
+Feature
+As A
+I want to 
+In order to
+
+Scenario
+Given
+And
+When
+Then
+
+1- Gherkin and Cucumber
+2- Cypress test 
+3- Postman test
