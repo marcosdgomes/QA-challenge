@@ -8,7 +8,7 @@ describe('Challenging dom', () => {
       //click in buttons through unique selectors//
       cy.get('[class=button]').click() //first button//
       cy.get('.button.alert').click() //second button//
-      cy.get('.button.success').click() //third bot
+      cy.get('.button.success').click() //third button//
 
 
   })
