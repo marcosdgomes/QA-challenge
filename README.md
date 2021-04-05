@@ -4,7 +4,7 @@ Projeto feito para conclusão do desafio encontrado em https://github.com/Wealth
 
 ## 1ª Etapa: Cenário de Testes
 
-Cenários de testes baseado em prototipo localizado em /1_scenario/resume.feature.
+Cenários de testes baseado em prototipo localizado em /1_scenario/resume.feature com syntax gherkin.
 ## 2ª Etapa: Automação Front-end
 Desafio 2 está na pasta /2_test_automation_front/cypress/integration.
 
