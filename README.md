@@ -10,7 +10,7 @@ Desafio 2 está na pasta /2_test_automation_front/cypress/integration.
 
 Para automação desta etapa foi utilizado  o Cypress, framework javascript E2E para testes automatizados, instalado atráves de pacote NPM.
 
-- Para execução do projeto, instalar Cypress na pasta em questão através do comando:
+- Para execução do projeto, instalar Cypress na pasta /2_test_automation_front através do comando:
 
 ```
 npm install cypress --save-dev
