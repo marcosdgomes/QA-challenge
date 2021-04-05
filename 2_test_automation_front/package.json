@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:open": "cypress open",
+    "cypress": "cypress run"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "cypress",
+    "test",
+    "challenge"
+  ],
+  "author": "Marcos Delano",
+  "license": "MIT",
   "devDependencies": {
     "cypress": "^6.8.0"
   }

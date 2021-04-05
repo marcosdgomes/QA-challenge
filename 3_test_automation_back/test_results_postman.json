@@ -1,0 +1,166 @@
+{
+	"id": "50fab926-66a0-47dc-b055-4975139f0bb9",
+	"name": "QA-challenge",
+	"timestamp": "2021-04-05T04:45:38.140Z",
+	"collection_id": "bb333c39-1c65-4497-904c-1f5c66bc9112",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 8,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "5d9988bf-57ee-496d-9a36-28d549347636",
+			"name": "DELETE",
+			"url": "https://jsonplaceholder.typicode.com/users/1",
+			"time": 467,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 700ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 700ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				467
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 700ms": true
+				}
+			]
+		},
+		{
+			"id": "b337fec9-4f88-4952-bde7-b715ce2f6917",
+			"name": "POST",
+			"url": "http://jsonplaceholder.typicode.com/users?id=",
+			"time": 462,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response time is less than 700ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 700ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				462
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response time is less than 700ms": true
+				}
+			]
+		},
+		{
+			"id": "2186fc9d-ee01-478c-857a-14a47428e811",
+			"name": "GET",
+			"url": "http://jsonplaceholder.typicode.com/users",
+			"time": 200,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 700ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 700ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				200
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 700ms": true
+				}
+			]
+		},
+		{
+			"id": "f34d89f6-02d2-4ab5-8b4c-58cec36ffad7",
+			"name": "PUT",
+			"url": "http://jsonplaceholder.typicode.com/users/2",
+			"time": 451,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 700ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 700ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				451
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 700ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1580,
+	"collection": {
+		"requests": [
+			{
+				"id": "5d9988bf-57ee-496d-9a36-28d549347636",
+				"method": "DELETE"
+			},
+			{
+				"id": "b337fec9-4f88-4952-bde7-b715ce2f6917",
+				"method": "POST"
+			},
+			{
+				"id": "2186fc9d-ee01-478c-857a-14a47428e811",
+				"method": "GET"
+			},
+			{
+				"id": "f34d89f6-02d2-4ab5-8b4c-58cec36ffad7",
+				"method": "PUT"
+			}
+		]
+	}
+}
