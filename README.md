@@ -21,7 +21,6 @@ npx cypress open
 ```
 - Em seguida, os testes salvos em /2_test_automation_front/cypress/integration serão exibidos e estão prontos para serem executados conforme requisitos especificados no desafio.
 
-![Teste](./images/2_test.png)
 ## 3ª Etapa: Automação Back-end (API)
 Desafio 3 está na pasta /3_test_automation_front. Para conclusão deste desafio foi criada uma collection no Postman. Os testes escritos consistem na checagem do HTTP code e tempo de resposta. Resultados dos testes também foram exportados para "test_results_postman.json". JSON schemas validados em https://www.jsonschemavalidator.net/
 
